@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Форматирование текста</title>
+        <style>
+            * {
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .default {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .underline {
+                text-decoration: underline;
+            }
+           .line-through {
+                text-decoration: line-through;
+           }
+           .italic {
+                font-style: italic;
+           }
+           .form_link_thirst {
+                color: red;
+                text-decoration: none;
+           }
+           .form_link_second:hover {
+                color: green;
+                text-decoration: underline;
+           }
+        </style>
+    </head>
+
+    <body>
+        <h1>Элементы в HTML5 (шрифт Arial)</h1>
+        
+        <h1 class="default">Стили форматирования текста (шрифт TimesNewRoman)</h1>
+
+        <h2>Часть 1. Изменение стиля фомартирования текста без использования стилей.</h2>
+
+            <p>Выделение текста жирным с <b>помощью тегов b в самом нужно слово или предложении</b>,  
+                <u>подчеркивание слова тегом u</u>, <s>зачеркивание слова тегом s</s> <i>и курсивным тегом i</i>
+            </p>
+
+        <h2>Часть 2. Изменения с использованием стилей.</h2>
+
+            <p class="bold">Выделение текста жирным с помощью класса в параграфе.</p>
+            <p>1.Выделение слова или предложения <span class="bold">жирным</span> - тегом span с указанным классом (название класса может быть любое на ваш выбор)</p> 
+            <p>2.Выделение слова или предложения <span class="underline">подчеркнутым</span> - тегом span с указанным классом (название класса может быть любое на ваш выбор)</p>
+            <p>3.Выделение слова или предложения <span class="line-through">зачеркнутым</span> - тегом span с указанным классом (название класса может быть любое на ваш выбор) </p>
+            <p>4.Выделение слова или предложении <span class="italic">курсивным</span> - тегом span с указанным классом (название класса может быть любое на ваш выбор) </p>
+
+        Все указанные классы с названиями bold, underline, line-through, italic должны быть так же расписаны в теге стилей 'style' , а именно для какого класса - применить какой стиль.
+        <h2>Часть 3. Списки.</h2>
+            <p>Не нумерованный список [unordered] - Неупорядоченный лист</p>
+            <ul>
+                <li>Пункт №1</li>
+                <li>Пункт №2</li>
+                <li>Пункт №3</li>
+                <li>Пункт №4</li>
+            </ul>
+
+            <p>Нумерованный список [ordered list] - Упорядоченный лист</p>
+            <ol>
+                <li>Пункт №1</li>
+                <li>Пункт №2</li>
+                <li>Пункт №3</li>
+            </ol>
+
+        <h1><a href="https://metanit.com/web/html5/2.3.php" target="_blank">1. (По умолчанию) Ссылка на статью форматирования текста</a></h1>
+        <h1><a class = 'form_link_thirst' href="https://metanit.com/web/html5/2.3.php" target="_blank">2. (Без линий и другой цвет) Ссылка на статью форматирования текста</a></h1>
+        <h1><a class = 'form_link_second' href="https://metanit.com/web/html5/2.3.php" target="_blank">3. (При наведение - изменяет вид) Ссылка на статью форматирования текста</a></h1>
+
+    </body>
+</html>
