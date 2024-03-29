@@ -8,6 +8,7 @@
             html, body {
                 margin: 0;
                 padding: 0 40px;
+                background-color: #f6f7f9;
             }
             header {
                 height: 100px;
@@ -24,7 +25,6 @@
                 height: 100%;
                 margin-left: auto;
                 margin-right: auto;
-                background-color: lightblue;
             }
             section {
                 padding: 40px;
@@ -40,6 +40,10 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
+                background-image: url(images/python_almir.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right center;
             }
             .services {
                 display: flex;
@@ -53,10 +57,62 @@
                 width: 150px;
             
             }
+            .price-info {
+                background-color: #3d52fe;
+                color: white;
+            }
+            .light-button {
+                border: 1px solid black;
+                background-color: transparent;
+            }
+            .dark-button {
+                background-color: #3d52fe;
+                border: 1px solid #3d52fe;
+                color: white;
+            }
+            button {
+                padding: 10px 30px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            .popup-countainer {
+                background-color: #000000b3;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+            .popup {
+                background-color: white;
+                width: 300px;
+                height: 300px;
+                padding: 30px;
+                border-radius: 5px;
+            }
         </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                var container = document.querySelector('.popup-countainer');
+                var popupButtons = document.querySelectorAll('.open-popup');
+                for (let i = 0; i < popupButtons.length; i++) {
+                    popupButtons[i].addEventListener('click', function(){
+                        container.style.display = 'flex';
+                    });
+                }
+            });
+        </script>
     </head>
 
     <body>
+        <div class="popup-countainer">
+            <form class="popup">
+
+            </form>
+        </div>
+
         <header>
             <div class="fixed-countainer">
                 <div>
@@ -67,7 +123,7 @@
 
                 <div>
                     <span>+7 919 628-90-11</span>
-                    <button>Заказать звонок</button>
+                    <button class="light-button open-popup">Заказать звонок</button>
                 </div>
             </div>
         </header>
@@ -76,7 +132,7 @@
             <div class="fixed-countainer">
                 <h1>Альмир Залитов</h1>
                 <p>Python-разработчик и веб-верстальщик</p>
-                <button>Узнать больше</button>
+                <button class="dark-button open-popup">Узнать больше</button>
             </div>    
         </section>
 
@@ -101,7 +157,7 @@
                         Исправление и доработка существующей вёрстки
                     </div>
                 </div>
-                <button>Узнать стоимость</button>
+                <button class="light-button open-popup">Узнать стоимость</button>
             </div>
         </section>
 
@@ -111,7 +167,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="price-info">
             <div class="fixed-countainer">
                 <h2>Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа. *</h2>
             </div>
