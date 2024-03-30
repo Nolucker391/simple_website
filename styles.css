@@ -1,0 +1,170 @@
+/* Фон, шрифт сайта. */
+
+html, body {
+    margin: 0;
+    padding: 0 40px;
+    background-color: #f6f7f9;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+
+/* Начало страницы */
+.light-button {
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+.phone-number button {
+    margin-left: 15px;
+}
+
+header {
+    height: 100px;
+    padding: 40px;
+}
+
+.header-change a, .footer-change a {
+    color: black;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.header-change a {
+    margin-right: 18px;
+}
+
+.header-change a:hover, .footer-change a:hover {
+    text-decoration: underline;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Тело страницы */
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 32px;
+}
+button {
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px;
+}
+.dark-button {
+    background-color: #3d52fe;
+    border: 1px solid #3d52fe;
+    color: white;
+    margin-top: 10px;
+}
+.popup-countainer {
+    background-color: #000000b3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.first-block > div {
+    height: 470px; 
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+.first-block h1 {
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.first-block p {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.first-block {  
+    height: 300px;
+    margin-bottom: 200px;
+}
+.first-block > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/python_almir.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+}
+
+
+.fixed-countainer {
+    max-width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.services > div {
+    width: 200px;
+    margin-top: 35px;
+}
+.services img{
+    width: 150px;
+    margin-bottom: 35px;
+}
+
+.second-block .light-button {
+    margin-top: 15px;
+}
+
+.price-info {
+    background-color: #3d52fe;
+    color: white;
+
+}
+
+/* .price-info h2, .price-info p {
+    width: 50%;
+} */
+/* Конец страницы */
+footer {
+    padding: 40px;
+}
+.footer-change {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-change a {
+    margin-bottom: 10px;
+}
+
+
+
+
+
