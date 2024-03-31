@@ -75,6 +75,8 @@ section {
     display: none;
     justify-content: center;
     align-items: center;
+    top: 0;
+    left: 0;
 }
 .popup {
     background-color: #ffffff;
@@ -82,7 +84,31 @@ section {
     height: 300px;
     padding: 30px;
     border-radius: 5px;
+    text-align: center;
 }
+
+.popup-countainer span {
+    border-radius:3em;
+    background:#212121;
+    color:#fff;
+    font-size:1.25em;
+    padding:.4em .7em;
+    cursor:pointer;
+}
+
+.closeup {
+    margin-bottom: 400px;
+
+}
+
+.popup input, .popup button {
+    margin-bottom: 20px;
+    background-color: #4766e2;
+    border-radius: 10px;
+    border-color: #212121;
+    width:max-content;
+}
+
 
 .first-block > div {
     height: 470px; 
@@ -158,13 +184,38 @@ footer {
 .footer-change {
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 
-.footer-change a {
+.footer-change > div {
     margin-bottom: 10px;
 }
 
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.footer-contacts div {
+    margin-bottom: 10px;
+}
 
+.footer-contacts, .link-of-social {
+    margin-bottom: auto;
+}
 
+.link-of-social img {
+    max-width: 10px;
+    min-height: 10px;
+}
 
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -20px;
+}
+
+.link-of-social button {
+    margin-bottom: 30px;
+}

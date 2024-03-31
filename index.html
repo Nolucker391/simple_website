@@ -13,24 +13,22 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function(){
-                var container = document.querySelector('.popup-countainer');
-                var popupButtons = document.querySelectorAll('.open-popup');
-                for (let i = 0; i < popupButtons.length; i++) {
-                    popupButtons[i].addEventListener('click', function(){
-                        container.style.display = 'flex';
-                    });
-                }
-            });
-        </script>
+        <script src="JavaScript.js"></script>
     </head>
 
     <body>
         <div class="popup-countainer">
-            <form class="popup">
-
-            </form>
+            <span class="closeup">x</span>
+        
+            <div>
+                <form class="popup">
+                    <h2>Оставить заявку</h2>
+                    <div><input type="text" placeholder="Введите ваше имя"></div>
+                    <div><input type="email" placeholder="Введите ваш email"></div>
+                    <div><input type="email" placeholder="Сообщение... "></div>
+                    <button>Отправить</button>
+                </form>
+            </div>
         </div>
 
         <header>
@@ -110,6 +108,23 @@
                     <div><a href="#">Услуги</a></div>
                     <div><a href="#">Портфолио</a></div>
                     <div><a href="#">Стоимость</a></div>    
+                </div>
+
+                <div class="footer-contacts">
+                    <div>zalitov2015@mail.ru</div>
+                    <div>+7 (919) 628-90-11</div>
+                </div>
+
+                <div class="link-of-social">
+                    <button class="light-button open-popup">Заказать звонок</button>
+                    
+                    <div class="icons">
+                        <div><a href="#"><img src="images/Социальные сети/fb.png" alt=""></a></div>
+                        <div><a href="#"><img src="images/Социальные сети/vk.png" alt=""></a></div>
+                        <div><a href="#"><img src="images/Социальные сети/you.png" alt=""></a></div>
+                        <div><a href="#"><img src="images/Социальные сети/telegram.png" alt=""></a></div>
+                        <div><a href="#"><img src="images/Социальные сети/inst.png" alt=""></a></div>
+                    </div>
                 </div>
             </div> 
         </footer>
