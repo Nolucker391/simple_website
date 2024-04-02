@@ -102,13 +102,19 @@ section {
 }
 
 .popup input, .popup button {
+    color: white;
     margin-bottom: 20px;
-    background-color: #4766e2;
+    background-color: #a6b5f0;
     border-radius: 10px;
     border-color: #212121;
-    width:max-content;
+    width: 100%;
+    height: 18px;
 }
 
+.popup button {
+    margin-top: 25px;
+    height: 50px;
+}
 
 .first-block > div {
     height: 470px; 
@@ -136,7 +142,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(images/python_almir.png);
+    background-image: url(images/image_almir.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
@@ -174,8 +180,34 @@ section {
 
 }
 
-.portfolio-section {
+
+
+
+.potrfolio-item {
     display: flex;
+    margin-top: 60px;
+}
+
+
+.potrfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.potrfolio-item > div {
+    margin-right: 50px;
+}
+
+
+.portfolio-section .light-button {
+    margin-top: 40px;
+}
+
+
+/* .portfolio-section {
+    display: flex;
+    margin-top: 60px;
 }
 
 .potrfolio-item {
@@ -187,6 +219,15 @@ section {
     width: 100%;
     height: auto;
 }
+
+.protfolio-section .light-button {
+    margin-top: 30px;
+
+} */
+
+
+
+
 
 /* .price-info h2, .price-info p {
     width: 50%;
