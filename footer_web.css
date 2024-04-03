@@ -1,0 +1,42 @@
+/* Конец страницы */
+footer {
+    padding: 40px;
+}
+.footer-change {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.footer-change > div {
+    margin-bottom: 10px;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contacts div {
+    margin-bottom: 10px;
+}
+
+.footer-contacts, .link-of-social {
+    margin-bottom: auto;
+}
+
+.link-of-social img {
+    max-width: 10px;
+    min-height: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -20px;
+}
+
+.link-of-social button {
+    margin-bottom: 30px;
+}

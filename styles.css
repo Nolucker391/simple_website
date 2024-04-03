@@ -1,49 +1,3 @@
-/* Фон, шрифт сайта. */
-
-html, body {
-    margin: 0;
-    padding: 0 40px;
-    background-color: #f6f7f9;
-}
-* {
-    font-family: 'Roboto', sans-serif;
-  }
-
-/* Начало страницы */
-.light-button {
-    border: 1px solid black;
-    background-color: transparent;
-}
-
-.phone-number button {
-    margin-left: 15px;
-}
-
-header {
-    height: 100px;
-    padding: 40px;
-}
-
-.header-change a, .footer-change a {
-    color: black;
-    text-decoration: none;
-    transition: text-decoration 0.3s;
-}
-
-.header-change a {
-    margin-right: 18px;
-}
-
-.header-change a:hover, .footer-change a:hover {
-    text-decoration: underline;
-}
-
-header > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Тело страницы */
 h1 {
     font-size: 56px;
@@ -107,8 +61,11 @@ section {
     background-color: #a6b5f0;
     border-radius: 10px;
     border-color: #212121;
-    width: 100%;
     height: 18px;
+}
+
+.popup ::placeholder {
+    color: #000;
 }
 
 .popup button {
@@ -232,45 +189,3 @@ section {
 /* .price-info h2, .price-info p {
     width: 50%;
 } */
-/* Конец страницы */
-footer {
-    padding: 40px;
-}
-.footer-change {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-}
-
-.footer-change > div {
-    margin-bottom: 10px;
-}
-
-footer > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-contacts div {
-    margin-bottom: 10px;
-}
-
-.footer-contacts, .link-of-social {
-    margin-bottom: auto;
-}
-
-.link-of-social img {
-    max-width: 10px;
-    min-height: 10px;
-}
-
-.icons {
-    display: flex;
-    justify-content: space-between;
-    margin-left: -20px;
-}
-
-.link-of-social button {
-    margin-bottom: 30px;
-}

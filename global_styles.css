@@ -1,0 +1,11 @@
+/* Фоны/Шрифт веб */
+@import url('fonts_web.css');
+
+/* Голова веб */
+@import url('header_web.css');
+
+/* Тело веб */
+@import url('styles.css');
+
+/* Конец веб */
+@import url('footer_web.css');
