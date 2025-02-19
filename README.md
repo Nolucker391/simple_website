@@ -1,8 +1,16 @@
-<h1 align="center">Simple website</h1>
+<h1 align="center">WEB - Resume
+    
+<br>
+<br>
 
+<img src="/assets/images/logo.png" alt="Demo" width="300" height="250">
 
-![Image 03 04 2024 at 16 24](https://github.com/Nolucker391/simple_website/assets/140087176/15b1964e-b011-4768-b074-a13d86aad159)
+</h1>
 
+<hr />
+
+## Демо-версия
+https://github.com/user-attachments/assets/a1f2def7-acb3-4a1e-8b28-a0aaeb05876b
 
 ***
 
